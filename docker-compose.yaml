@@ -2,10 +2,11 @@ version: "3"
 services:
     nginx-test:
       build: ./
-      image: dalongrong/nginx-pcretest
+      image: dalongrong/nginx-pcretest:v2
       ports: 
       - "80:80"
       - "9090:8080"
+      - "9001:9001"
     nginx-regex-test:
       image: dalongrong/nginx-regex-tester_regextester:latest
       ports: 
